@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2R Turismo | Receptivo & Passeios em Foz do Iguaçu</title>
+  <meta name="description" content="Agência de receptivo e passeios em Foz do Iguaçu. Cataratas, Macuco Safari, compras no Paraguai, Argentina e transfers privativos." />
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              emerald: '#059669',
+              amber: '#f59e0b',
+              dark: '#090d14',
+              card: '#0f1522',
+              border: 'rgba(255, 255, 255, 0.08)'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #090d14;
+      color: #f3f4f6;
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #fbbf24, #f97316, #fb7185);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-gradient-emerald {
+      background: linear-gradient(135deg, #34d399, #10b981, #059669);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 2s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-[#090d14] text-slate-100 antialiased selection:bg-emerald-600 selection:text-white">
+
+  <!-- ==================== TOP ANNOUNCEMENT BAR ==================== -->
+  <div class="bg-gradient-to-r from-emerald-950 via-[#0a1813] to-emerald-950 border-b border-emerald-500/20 text-xs py-2 px-4 text-center">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2 text-emerald-400 font-bold mx-auto sm:mx-0">
+        <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+        <span>Receptivo Oficial em Foz do Iguaçu • Cadastur Regularizado • Atendimento WhatsApp 24h</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-4 text-neutral-300">
+        <a href="https://wa.me/5545920005513" target="_blank" class="hover:text-emerald-400 font-bold flex items-center gap-1.5 transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400"></i>
+          +55 (45) 92000-5513
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="sticky top-0 z-40 bg-[#090d14]/90 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <a href="#inicio" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center font-black text-white text-xl shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform">
+            2R
+          </div>
+          <div>
+            <span class="block font-black text-xl tracking-tight text-white leading-none">2R TURISMO</span>
+            <span class="text-[10px] font-bold tracking-[0.25em] text-emerald-400 uppercase">Receptivo Foz</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-neutral-300">
+          <a href="#passeios" class="hover:text-emerald-400 transition-colors">Passeios</a>
+          <a href="#roteiros" class="hover:text-emerald-400 transition-colors">Roteiros Prontos</a>
+          <a href="#calculadora" class="hover:text-emerald-400 transition-colors flex items-center gap-1.5">
+            <i data-lucide="calculator" class="w-4 h-4 text-amber-400"></i>
+            <span>Calculadora</span>
+          </a>
+          <a href="#sobre" class="hover:text-emerald-400 transition-colors">A Empresa</a>
+          <a href="#feed" class="hover:text-emerald-400 transition-colors">Fotos</a>
+          <a href="#avaliacoes" class="hover:text-emerald-400 transition-colors">Avaliações</a>
+          <a href="#duvidas" class="hover:text-emerald-400 transition-colors">Dúvidas</a>
+        </nav>
+
+        <!-- CTA WhatsApp Button -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a
+            href="https://wa.me/5545920005513?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20passeios%20com%20a%202R%20Turismo!"
+            target="_blank"
+            class="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-600/30 flex items-center gap-2 transition-all hover:scale-105"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Chamar no WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="lg:hidden p-2 text-neutral-300 hover:text-white" aria-label="Abrir menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#0d121b] border-b border-white/10 px-4 pt-2 pb-6 space-y-3">
+      <a href="#passeios" class="block py-2 text-neutral-300 hover:text-emerald-400 font-semibold mobile-link">Passeios</a>
+      <a href="#roteiros" class="block py-2 text-neutral-300 hover:text-emerald-400 font-semibold mobile-link">Roteiros Prontos</a>
+      <a href="#calculadora" class="block py-2 text-neutral-300 hover:text-emerald-400 font-semibold mobile-link">Calculadora de Passeios</a>
+      <a href="#sobre" class="block py-2 text-neutral-300 hover:text-emerald-400 font-semibold mobile-link">A Empresa</a>
+      <a href="#feed" class="block py-2 text-neutral-300 hover:text-emerald-400 font-semibold mobile-link">Instagram & Fotos</a>
+      <a href="#duvidas" class="block py-2 text-neutral-300 hover:text-emerald-400 font-semibold mobile-link">Dúvidas Frequentes</a>
+      <a
+        href="https://wa.me/5545920005513?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20passeios%20com%20a%202R%20Turismo!"
+        target="_blank"
+        class="block w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold py-3 rounded-xl shadow-lg mt-4"
+      >
+        Chamar no WhatsApp (45) 92000-5513
+      </a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="inicio" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-24">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="assets/tours/cataratas_passarela.jpg"
+        alt="Cataratas do Iguaçu"
+        class="w-full h-full object-cover object-center brightness-50 contrast-110"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-[#090d14] via-[#090d14]/70 to-[#090d14]/40"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-emerald-400 text-xs sm:text-sm font-black uppercase tracking-wider mb-6">
+        <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i>
+        <span>Receptivo VIP na Tríplice Fronteira</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight leading-[1.1] mb-6 uppercase">
+        Sua Viagem dos Sonhos em <br />
+        <span class="text-gradient">Foz do Iguaçu</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-lg sm:text-xl md:text-2xl text-neutral-300 max-w-3xl mx-auto mb-10 font-normal leading-relaxed">
+        Passeios privativos, transfers pontuais e roteiros sob medida para as 
+        <strong class="text-white font-bold">Cataratas (Brasil e Argentina)</strong>, 
+        <strong class="text-white font-bold">Macuco Safari</strong> e 
+        <strong class="text-white font-bold">Compras no Paraguai</strong>.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto sm:max-w-none">
+        <a
+          href="https://wa.me/5545920005513?text=Ol%C3%A1%2C%20gostaria%20de%20montar%20um%20roteiro%20personalizado%20para%20Foz%20do%20Igua%C3%A7u!"
+          target="_blank"
+          class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-black text-base px-8 py-4 rounded-xl shadow-xl shadow-emerald-600/30 flex items-center justify-center gap-3 transition-all hover:scale-105"
+        >
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          <span>Solicitar Orçamento Grátis</span>
+        </a>
+        <a
+          href="#calculadora"
+          class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white backdrop-blur-md border border-white/20 font-extrabold text-base px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all"
+        >
+          <i data-lucide="calculator" class="w-5 h-5 text-amber-400"></i>
+          <span>Simular Passeios</span>
+        </a>
+      </div>
+
+      <!-- Quick Trust Indicators -->
+      <div class="mt-14 pt-8 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
+        <div class="flex items-center gap-3">
+          <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+          <span class="text-xs sm:text-sm font-semibold text-neutral-300">Buscamos no seu Hotel</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <i data-lucide="clock" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+          <span class="text-xs sm:text-sm font-semibold text-neutral-300">Pontualidade Britânica</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <i data-lucide="car" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+          <span class="text-xs sm:text-sm font-semibold text-neutral-300">Frota com Ar-Condicionado</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <i data-lucide="shield" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+          <span class="text-xs sm:text-sm font-semibold text-neutral-300">Documentação Internacional</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section id="sobre" class="py-24 bg-[#0d121b] border-t border-white/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <!-- Image Card with Instagram Badge -->
+        <div class="space-y-6">
+          <div class="relative rounded-2xl overflow-hidden border border-white/15 shadow-2xl group">
+            <img
+              src="assets/tours/about_empresa.jpg"
+              alt="2R Turismo Foz"
+              class="w-full h-[440px] object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#090d14]/90 via-black/20 to-transparent"></div>
+            
+            <!-- Floating Instagram Card -->
+            <div class="absolute bottom-6 left-6 right-6 bg-[#0f1522]/95 backdrop-blur-md p-4 rounded-xl border border-white/10 flex items-center justify-between gap-4 shadow-xl">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] flex items-center justify-center text-white shrink-0 shadow-md">
+                  <i data-lucide="instagram" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-neutral-400 block">Siga nosso dia a dia</span>
+                  <strong class="text-white text-sm font-black">@2rturismo_foz</strong>
+                </div>
+              </div>
+              <a
+                href="https://www.instagram.com/2rturismo_foz/"
+                target="_blank"
+                class="bg-gradient-to-r from-[#f09433] to-[#dc2743] hover:opacity-90 text-white font-extrabold text-xs px-4 py-2 rounded-lg flex items-center gap-1 transition-all shrink-0 shadow"
+              >
+                <span>Seguir</span>
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-3">
+            <div class="bg-[#141b27] p-4 rounded-xl border border-white/5 text-center">
+              <span class="block text-2xl sm:text-3xl font-black text-amber-400">3</span>
+              <span class="text-xs text-neutral-400 font-semibold">Países Atendidos</span>
+            </div>
+            <div class="bg-[#141b27] p-4 rounded-xl border border-white/5 text-center">
+              <span class="block text-2xl sm:text-3xl font-black text-amber-400">+100</span>
+              <span class="text-xs text-neutral-400 font-semibold">Turistas Felizes</span>
+            </div>
+            <div class="bg-[#141b27] p-4 rounded-xl border border-white/5 text-center">
+              <span class="block text-2xl sm:text-3xl font-black text-emerald-400">100%</span>
+              <span class="text-xs text-neutral-400 font-semibold">Pontualidade</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story & Differentials -->
+        <div>
+          <span class="inline-block text-amber-400 font-black text-xs tracking-[0.25em] uppercase mb-3">Conheça a Empresa</span>
+          <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase leading-tight mb-6">
+            2R Turismo: <br />
+            <span class="text-gradient">O Receptivo que Cuida de Você</span>
+          </h2>
+          <p class="text-neutral-300 text-base sm:text-lg leading-relaxed mb-8">
+            Fundada em Foz do Iguaçu, a <strong class="text-white font-bold">2R Turismo</strong> nasceu para transformar a sua passagem pela Tríplice Fronteira em uma experiência inesquecível, segura e sem estresse. Sabemos que o seu tempo de férias é sagrado, por isso cuidamos de cada deslocamento com pontualidade e carinho.
+          </p>
+
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0 mt-1">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <strong class="text-white font-bold block text-sm sm:text-base">Motoristas Credenciados</strong>
+                <p class="text-xs sm:text-sm text-neutral-400">Profissionais locais experientes nas aduanas e rotas da fronteira.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0 mt-1">
+                <i data-lucide="car" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <strong class="text-white font-bold block text-sm sm:text-base">Veículos Confortáveis</strong>
+                <p class="text-xs sm:text-sm text-neutral-400">Vans e carros executivos higienizados e com ar-condicionado potente.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 mt-1">
+                <i data-lucide="heart-handshake" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <strong class="text-white font-bold block text-sm sm:text-base">Atendimento Humanizado</strong>
+                <p class="text-xs sm:text-sm text-neutral-400">Suporte no WhatsApp 7 dias por semana para tirar todas as dúvidas.</p>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/5545920005513?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%202R%20Turismo."
+            target="_blank"
+            class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm px-6 py-3 rounded-xl transition-all shadow-lg"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Falar com nosso especialista</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TOURS SECTION ==================== -->
+  <section id="passeios" class="py-24 bg-[#090d14] border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-emerald-400 font-black text-xs uppercase tracking-[0.25em] block mb-2">Destinos & Atrativos</span>
+        <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase mb-4">
+          Passeios Mais Desejados
+        </h2>
+        <p class="text-neutral-300 text-sm sm:text-base">
+          Escolha os melhores passeios de Foz do Iguaçu, Argentina e Paraguai com transporte privativo de ida e volta do seu hotel.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mt-8" id="categoryFilters">
+          <button class="filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-emerald-600 text-white" data-category="all">
+            Todos os Passeios
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white/5 hover:bg-white/10 text-neutral-300" data-category="imperdiveis">
+            Imperdíveis
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white/5 hover:bg-white/10 text-neutral-300" data-category="aventura">
+            Aventura & Emoção
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white/5 hover:bg-white/10 text-neutral-300" data-category="familia">
+            Família & Natureza
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white/5 hover:bg-white/10 text-neutral-300" data-category="compras_noite">
+            Compras & Gastronomia
+          </button>
+        </div>
+      </div>
+
+      <!-- Tours Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="toursGrid">
+        <!-- Javascript will populate cards here -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== PACKAGES SECTION ==================== -->
+  <section id="roteiros" class="py-24 bg-[#0d121b] border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-amber-400 font-black text-xs uppercase tracking-[0.25em] block mb-2">Roteiros Prontos</span>
+        <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase mb-4">
+          Pacotes Completos Dia a Dia
+        </h2>
+        <p class="text-neutral-300 text-sm sm:text-base">
+          Economize tempo e aproveite o melhor de Foz sem se preocupar com logística ou horários.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Package 1: 3 Dias -->
+        <div class="bg-[#121824] rounded-2xl border border-white/10 p-6 flex flex-col justify-between hover:border-emerald-500/50 transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-black bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">3 Dias / 2 Noites</span>
+              <span class="text-xs font-bold text-neutral-400">Rápido & Marcante</span>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-2">Foz Essencial</h3>
+            <p class="text-neutral-300 text-sm mb-6">Ideal para finais de semana ou feriados prolongados para conhecer os principais pontos.</p>
+            
+            <div class="space-y-2 mb-8 text-xs sm:text-sm text-neutral-300">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Transfer Aeroporto In/Out</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Cataratas do Iguaçu (Brasil)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Parque das Aves</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Compras no Paraguai</span>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/5545920005513?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20pacote%20Foz%20Essencial%20(3%20Dias)!"
+            target="_blank"
+            class="w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition-all shadow"
+          >
+            Cotar Pacote 3 Dias
+          </a>
+        </div>
+
+        <!-- Package 2: 4 Dias (Destaque) -->
+        <div class="bg-gradient-to-b from-[#172233] to-[#121824] rounded-2xl border-2 border-amber-500/50 p-6 flex flex-col justify-between shadow-2xl relative">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-amber-400 text-black text-xs font-black px-4 py-1 rounded-full uppercase tracking-wider shadow">
+            Mais Vendido
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-4 mt-2">
+              <span class="px-3 py-1 rounded-full text-xs font-black bg-amber-500/20 text-amber-300 border border-amber-500/30">4 Dias / 3 Noites</span>
+              <span class="text-xs font-bold text-amber-300">Tríplice Fronteira</span>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-2">Experiência 3 Países</h3>
+            <p class="text-neutral-300 text-sm mb-6">O equilíbrio perfeito para vivenciar Brasil, Argentina e Paraguai com calma.</p>
+            
+            <div class="space-y-2 mb-8 text-xs sm:text-sm text-neutral-200">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+                <span>Transfer Aeroporto In/Out</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+                <span>Cataratas Brasil + Parque das Aves</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+                <span>Cataratas Argentina (Garganta do Diabo)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+                <span>Compras Ciudad del Este (Paraguai)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+                <span>Noite em Puerto Iguazú (Argentina)</span>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/5545920005513?text=Ol%C3%A1%2C%20quero%20o%20or%C3%A7amento%20do%20pacote%20Experi%C3%AAncia%203%20Pa%C3%ADses%20(4%20Dias)!"
+            target="_blank"
+            class="w-full text-center bg-amber-500 hover:bg-amber-400 text-black font-black py-3 rounded-xl transition-all shadow-lg"
+          >
+            Cotar Pacote 4 Dias
+          </a>
+        </div>
+
+        <!-- Package 3: 5 Dias -->
+        <div class="bg-[#121824] rounded-2xl border border-white/10 p-6 flex flex-col justify-between hover:border-emerald-500/50 transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full text-xs font-black bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">5 Dias / 4 Noites</span>
+              <span class="text-xs font-bold text-neutral-400">Experiência VIP</span>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-2">Imersão Total & Aventura</h3>
+            <p class="text-neutral-300 text-sm mb-6">Para quem quer viver Foz intensamente, incluindo o eletrizante Macuco Safari.</p>
+            
+            <div class="space-y-2 mb-8 text-xs sm:text-sm text-neutral-300">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Todos os passeios dos 3 países</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Macuco Safari de Barco sob as quedas</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Usina Hidrelétrica de Itaipu</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Marco das Três Fronteiras</span>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/5545920005513?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20pacote%20Imers%C3%A3o%20Total%20(5%20Dias)!"
+            target="_blank"
+            class="w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition-all shadow"
+          >
+            Cotar Pacote 5 Dias
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CALCULATOR SECTION ==================== -->
+  <section id="calculadora" class="py-24 bg-[#090d14] border-t border-white/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-amber-400 font-black text-xs uppercase tracking-[0.25em] block mb-2">Faça sua Simulação</span>
+        <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase mb-4">
+          Calculadora de Passeios
+        </h2>
+        <p class="text-neutral-300 text-sm sm:text-base max-w-2xl mx-auto">
+          Marque os passeios que deseja fazer, selecione a quantidade de passageiros e gere na hora um orçamento para envio via WhatsApp!
+        </p>
+      </div>
+
+      <div class="bg-[#0f1522] rounded-3xl border border-white/10 p-6 sm:p-10 shadow-2xl">
+        
+        <!-- Step 1: Passageiros -->
+        <div class="mb-8 pb-8 border-b border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <h3 class="text-lg font-bold text-white flex items-center gap-2">
+              <i data-lucide="users" class="w-5 h-5 text-emerald-400"></i>
+              <span>Quantidade de Passageiros</span>
+            </h3>
+            <p class="text-xs text-neutral-400">Crianças até 5 anos no colo não pagam transporte privativo.</p>
+          </div>
+          <div class="flex items-center gap-3 bg-[#161f30] px-4 py-2 rounded-xl border border-white/10">
+            <button id="btnMinusPeople" class="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 text-white font-bold flex items-center justify-center text-lg">-</button>
+            <span id="peopleCount" class="w-8 text-center text-xl font-black text-white">2</span>
+            <button id="btnPlusPeople" class="w-8 h-8 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold flex items-center justify-center text-lg">+</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Checkboxes dos Passeios -->
+        <div class="mb-8">
+          <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-5 h-5 text-emerald-400"></i>
+            <span>Selecione os Passeios Desejados</span>
+          </h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="calculatorToursList">
+            <!-- Populated via Javascript -->
+          </div>
+        </div>
+
+        <!-- Step 3: Resumo e Total -->
+        <div class="bg-[#161f30] rounded-2xl p-6 border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <span class="text-xs uppercase tracking-wider text-neutral-400 font-bold block mb-1">Total Estimado de Transporte</span>
+            <div class="flex items-baseline gap-2">
+              <span class="text-3xl sm:text-4xl font-black text-emerald-400" id="calcTotalPrice">R$ 0</span>
+              <span class="text-xs text-neutral-400">(Veículo privativo para o grupo)</span>
+            </div>
+            <p class="text-xs text-neutral-400 mt-1" id="calcSelectedSummary">0 passeios selecionados para 2 pessoas</p>
+          </div>
+
+          <a
+            id="btnCalcWhatsApp"
+            href="#"
+            target="_blank"
+            class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base px-8 py-4 rounded-xl shadow-lg flex items-center justify-center gap-2 transition-all"
+          >
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span>Enviar Pedido no WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== REVIEWS SECTION ==================== -->
+  <section id="avaliacoes" class="py-24 bg-[#0d121b] border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold mb-3">
+          <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+          <span>Nota 5.0 no Google Avaliações</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase mb-4">
+          Quem Viajou com a 2R Recomenda
+        </h2>
+        <p class="text-neutral-300 text-sm sm:text-base">
+          Depoimentos de famílias, casais e viajantes que confiaram em nossos serviços na Tríplice Fronteira.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-[#121824] p-6 rounded-2xl border border-white/5 shadow-lg flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-neutral-200 text-sm italic leading-relaxed mb-6">
+              "Serviço impecável! O motorista nos buscou no horário exato no hotel, nos ajudou com as compras no Paraguai e ainda deu dicas ótimas de restaurantes na Argentina. Com certeza indico!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+            <div class="w-10 h-10 rounded-full bg-emerald-600 font-bold flex items-center justify-center text-white text-sm">
+              MS
+            </div>
+            <div>
+              <strong class="text-white text-sm block">Marcelo & Sandra</strong>
+              <span class="text-xs text-neutral-400">São Paulo - SP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#121824] p-6 rounded-2xl border border-white/5 shadow-lg flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-neutral-200 text-sm italic leading-relaxed mb-6">
+              "Fizemos o Macuco Safari e as Cataratas da Argentina com a 2R. Carro super limpo, ar-condicionado perfeito e muita tranquilidade na travessia da aduana com as crianças."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+            <div class="w-10 h-10 rounded-full bg-amber-600 font-bold flex items-center justify-center text-white text-sm">
+              CL
+            </div>
+            <div>
+              <strong class="text-white text-sm block">Carla Lima & Família</strong>
+              <span class="text-xs text-neutral-400">Belo Horizonte - MG</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#121824] p-6 rounded-2xl border border-white/5 shadow-lg flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-4">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-neutral-200 text-sm italic leading-relaxed mb-6">
+              "Contratamos o pacote de 4 dias. Melhor decisão! Nada de filas, nada de estresse de estacionamento ou ônibus lotado. Atendimento nota 10 pelo WhatsApp desde o primeiro contato."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/5">
+            <div class="w-10 h-10 rounded-full bg-blue-600 font-bold flex items-center justify-center text-white text-sm">
+              RA
+            </div>
+            <div>
+              <strong class="text-white text-sm block">Rodrigo Alves</strong>
+              <span class="text-xs text-neutral-400">Rio de Janeiro - RJ</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FAQ SECTION ==================== -->
+  <section id="duvidas" class="py-24 bg-[#090d14] border-t border-white/10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16">
+        <span class="text-emerald-400 font-black text-xs uppercase tracking-[0.25em] block mb-2">Tire Suas Dúvidas</span>
+        <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase mb-4">
+          Perguntas Frequentes
+        </h2>
+        <p class="text-neutral-300 text-sm sm:text-base">
+          Tudo o que você precisa saber para viajar com segurança e tranquilidade.
+        </p>
+      </div>
+
+      <div class="space-y-4" id="faqAccordion">
+        
+        <div class="faq-card bg-[#0f1522] rounded-xl border border-white/10 overflow-hidden">
+          <button class="faq-btn w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-white hover:text-emerald-400 transition-colors">
+            <span>Quais documentos são obrigatórios para cruzar a Argentina e o Paraguai?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 shrink-0 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-neutral-300 leading-relaxed border-t border-white/5 pt-4">
+            Para entrar na Argentina ou Paraguai, brasileiros devem apresentar: <strong>RG original emitido há menos de 10 anos</strong> e em perfeito estado de conservação, OU <strong>Passaporte válido</strong>. CNH digital é aceita somente para o Paraguai na aduana terrestre, mas na Argentina <strong>é obrigatório RG físico ou Passaporte</strong>. Menores de 18 anos desacompanhados de um dos pais necessitam de autorização judicial com firma reconhecida.
+          </div>
+        </div>
+
+        <div class="faq-card bg-[#0f1522] rounded-xl border border-white/10 overflow-hidden">
+          <button class="faq-btn w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-white hover:text-emerald-400 transition-colors">
+            <span>O transporte busca e leva no meu hotel ou Airbnb?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 shrink-0 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-neutral-300 leading-relaxed border-t border-white/5 pt-4">
+            Sim! Todos os nossos passeios e transfers privativos incluem o serviço de <strong>embarque e desembarque na porta do seu hotel, resort, pousada ou Airbnb</strong> localizado no perímetro urbano de Foz do Iguaçu.
+          </div>
+        </div>
+
+        <div class="faq-card bg-[#0f1522] rounded-xl border border-white/10 overflow-hidden">
+          <button class="faq-btn w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-white hover:text-emerald-400 transition-colors">
+            <span>Os ingressos dos parques estão inclusos no valor do transfer?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 shrink-0 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-neutral-300 leading-relaxed border-t border-white/5 pt-4">
+            O valor cobrado pela 2R Turismo cobre o <strong>transporte privativo exclusivo do seu grupo</strong>, motorista credenciado, combustível e assistência na fronteira. Os ingressos das Cataratas, Macuco e Parque das Aves são adquiridos nos canais oficiais, mas nossa equipe orienta e ajuda na emissão antecipada de todos os bilhetes para evitar filas!
+          </div>
+        </div>
+
+        <div class="faq-card bg-[#0f1522] rounded-xl border border-white/10 overflow-hidden">
+          <button class="faq-btn w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-white hover:text-emerald-400 transition-colors">
+            <span>Quais são as formas de pagamento aceitas?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 shrink-0 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-neutral-300 leading-relaxed border-t border-white/5 pt-4">
+            Aceitamos <strong>Pix</strong> com desconto especial, transferência bancária e <strong>cartões de crédito</strong> com opção de parcelamento. Você pode confirmar a reserva com um sinal e pagar o restante na chegada em Foz!
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-[#070a0f] border-t border-white/10 py-16 text-neutral-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Col 1: Brand -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center font-black text-white text-lg">
+              2R
+            </div>
+            <span class="font-black text-lg text-white">2R TURISMO FOZ</span>
+          </div>
+          <p class="text-xs text-neutral-400 leading-relaxed">
+            Receptivo turístico oficial, transfers privativos e roteiros sob medida para Foz do Iguaçu, Argentina e Paraguai.
+          </p>
+          <div class="text-xs font-semibold text-emerald-400">
+            Cadastur: 18.042.890/0001-20
+          </div>
+        </div>
+
+        <!-- Col 2: Links Rápidos -->
+        <div>
+          <strong class="text-white text-sm font-bold uppercase tracking-wider block mb-4">Navegação</strong>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#inicio" class="hover:text-emerald-400 transition-colors">Início</a></li>
+            <li><a href="#passeios" class="hover:text-emerald-400 transition-colors">Passeios em Destaque</a></li>
+            <li><a href="#roteiros" class="hover:text-emerald-400 transition-colors">Pacotes de 3, 4 e 5 Dias</a></li>
+            <li><a href="#calculadora" class="hover:text-emerald-400 transition-colors">Calculadora de Preços</a></li>
+            <li><a href="#sobre" class="hover:text-emerald-400 transition-colors">Sobre a Empresa</a></li>
+            <li><a href="#duvidas" class="hover:text-emerald-400 transition-colors">Dúvidas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contatos -->
+        <div>
+          <strong class="text-white text-sm font-bold uppercase tracking-wider block mb-4">Atendimento</strong>
+          <ul class="space-y-3 text-xs">
+            <li class="flex items-start gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+              <a href="https://wa.me/5545920005513" target="_blank" class="hover:text-white transition-colors">
+                +55 (45) 92000-5513
+              </a>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="instagram" class="w-4 h-4 text-pink-400 shrink-0 mt-0.5"></i>
+              <a href="https://www.instagram.com/2rturismo_foz/" target="_blank" class="hover:text-white transition-colors">
+                @2rturismo_foz
+              </a>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+              <span>Av. das Cataratas, Foz do Iguaçu - PR</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>Plantão 24h para transfers agendados</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: HTML Version Download Card -->
+        <div class="bg-[#101726] p-5 rounded-2xl border border-white/10">
+          <div class="flex items-center gap-2 text-white font-bold text-sm mb-2">
+            <i data-lucide="code-2" class="w-4 h-4 text-emerald-400"></i>
+            <span>Versão 100% HTML</span>
+          </div>
+          <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+            Este arquivo é autocontido e funciona diretamente em qualquer navegador ou hospedagem sem precisar de Node.js.
+          </p>
+          <a
+            href="site-puro.html"
+            download="2r-turismo-foz.html"
+            class="inline-flex items-center justify-center gap-2 w-full bg-white/10 hover:bg-white/20 text-white font-bold text-xs py-2.5 px-4 rounded-xl border border-white/20 transition-all"
+          >
+            <i data-lucide="download" class="w-3.5 h-3.5 text-emerald-400"></i>
+            <span>Baixar Arquivo HTML</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
+        <p>© 2026 2R Turismo Foz. Todos os direitos reservados.</p>
+        <p>Desenvolvido para alta conversão e experiência de receptivo.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+  <aside aria-label="Atendimento WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <span class="hidden md:inline-flex bg-[#0f1522]/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/15 shadow-xl animate-pulse-subtle">
+      👋 Dúvidas? Fale Conosco
+    </span>
+    <a
+      href="https://wa.me/5545920005513?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20passeios%20em%20Foz%20do%20Igua%C3%A7u!"
+      target="_blank"
+      class="w-14 h-14 bg-emerald-500 hover:bg-emerald-400 text-white rounded-full flex items-center justify-center shadow-2xl shadow-emerald-500/50 hover:scale-110 transition-transform active:scale-95"
+      aria-label="Atendimento no WhatsApp"
+    >
+      <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+  </aside>
+
+  <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+  <script>
+    // Tour Data
+    const TOURS_DATA = [
+      {
+        id: 'cataratas-brasil',
+        title: 'Cataratas do Iguaçu (Brasil)',
+        subtitle: 'Uma das 7 Maravilhas da Natureza com passarela panorâmica',
+        category: 'imperdiveis',
+        image: 'assets/tours/cataratas_brasil.jpg',
+        duration: '4 a 5 horas',
+        badge: 'Mais Procurado',
+        destination: 'Brasil',
+        priceEst: 140,
+        description: 'A mais espetacular vista panorâmica dos saltos das Cataratas, com passarela que leva bem em frente à monumental Garganta do Diabo.'
+      },
+      {
+        id: 'macuco-safari',
+        title: 'Macuco Safari (Aventura de Barco)',
+        subtitle: 'Navegação em barco inflável bimotor até as quedas d\'água',
+        category: 'aventura',
+        image: 'assets/tours/macuco_aventura.jpg',
+        duration: '2h30 a 3 horas',
+        badge: 'Pura Emoção',
+        destination: 'Brasil',
+        priceEst: 140,
+        description: 'Trilha em veículo elétrico pela selva do Parque Nacional e embarque em botes para o emocionante banho sob as grandes quedas!'
+      },
+      {
+        id: 'cataratas-argentina',
+        title: 'Cataratas do Iguaçu (Argentina)',
+        subtitle: 'Caminhe por cima da Garganta do Diabo e trilhas imersivas',
+        category: 'imperdiveis',
+        image: 'assets/tours/cataratas_argentina.jpg',
+        duration: 'Dia Inteiro (6 a 7 horas)',
+        badge: 'Experiência Completa',
+        destination: 'Argentina',
+        priceEst: 260,
+        description: 'Sinta a força colossal da água bem de cima na famosa Garganta do Diabo Argentina. Inclui trem ecológico e circuitos superiores e inferiores.'
+      },
+      {
+        id: 'parque-das-aves',
+        title: 'Parque das Aves',
+        subtitle: 'Maior parque de preservação de aves da América Latina',
+        category: 'familia',
+        image: 'assets/tours/parque_aves.jpg',
+        duration: '2 a 3 horas',
+        badge: 'Natureza & Vida',
+        destination: 'Brasil',
+        priceEst: 120,
+        description: 'Imersão em viveiros gigantes onde tucanos, araras coloridas, flamingos e borboletas voam ao seu redor.'
+      },
+      {
+        id: 'compras-paraguai',
+        title: 'Compras no Paraguai (Ciudad del Este)',
+        subtitle: 'Transporte seguro, pontualidade e dicas das melhores lojas',
+        category: 'compras_noite',
+        image: 'assets/tours/compras_paraguai.jpg',
+        duration: '5 a 6 horas',
+        badge: 'Melhores Preços',
+        destination: 'Paraguai',
+        priceEst: 180,
+        description: 'Veículo com autorização internacional para você fazer suas compras no Paraguai com ar-condicionado, segurança e pontualidade.'
+      },
+      {
+        id: 'noite-argentina',
+        title: 'Noite em Puerto Iguazú (Argentina)',
+        subtitle: 'Jantar com carnes nobres, vinhos, feirinha e cassino',
+        category: 'compras_noite',
+        image: 'assets/tours/noite_puerto_iguazu.jpg',
+        duration: '4 a 5 horas',
+        badge: 'Gastronomia & Vinhos',
+        destination: 'Argentina',
+        priceEst: 200,
+        description: 'Desfrute da culinária argentina com as autênticas parrillas (bife de chorizo), alfajores, empanadas artesanais e azeites.'
+      },
+      {
+        id: 'itaipu-panoramica',
+        title: 'Usina Hidrelétrica de Itaipu',
+        subtitle: 'A maior geradora de energia limpa e renovável do planeta',
+        category: 'familia',
+        image: 'assets/tours/itaipu_aerea.jpg',
+        duration: '2 a 3 horas',
+        badge: 'Engenharia Gigante',
+        destination: 'Brasil',
+        priceEst: 130,
+        description: 'Visita panorâmica à colossal usina binacional de Itaipu, passando pelo vertedouro e topo da barragem de concreto.'
+      },
+      {
+        id: 'marco-tres-fronteiras',
+        title: 'Marco das Três Fronteiras',
+        subtitle: 'Pôr do sol mágico no encontro dos Rios Iguaçu e Paraná',
+        category: 'familia',
+        image: 'assets/tours/marco_tres_fronteiras.jpg',
+        duration: '3 a 4 horas (Tarde/Noite)',
+        badge: 'Cultura & Show',
+        destination: 'Brasil',
+        priceEst: 130,
+        description: 'Show de danças típicas homenageando Brasil, Paraguai e Argentina com gastronomia regional e pôr do sol inesquecível.'
+      }
+    ];
+
+    // Render Tours Cards
+    function renderTours(category = 'all') {
+      const grid = document.getElementById('toursGrid');
+      const filtered = category === 'all' 
+        ? TOURS_DATA 
+        : TOURS_DATA.filter(t => t.category === category);
+
+      grid.innerHTML = filtered.map(tour => `
+        <div class="bg-[#101622] rounded-2xl overflow-hidden border border-white/10 hover:border-emerald-500/40 transition-all flex flex-col justify-between group shadow-xl">
+          <div>
+            <div class="relative h-56 overflow-hidden">
+              <img
+                src="${tour.image}"
+                alt="${tour.title}"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute top-3 left-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-extrabold text-amber-400 border border-amber-400/30">
+                ${tour.badge}
+              </div>
+              <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full text-[11px] font-bold text-white border border-white/20">
+                ${tour.destination}
+              </div>
+              <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur-md px-2.5 py-1 rounded-lg text-xs font-semibold text-neutral-300 flex items-center gap-1.5">
+                <i data-lucide="clock" class="w-3.5 h-3.5 text-emerald-400"></i>
+                <span>${tour.duration}</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-black text-white group-hover:text-emerald-400 transition-colors mb-2">
+                ${tour.title}
+              </h3>
+              <p class="text-neutral-400 text-xs sm:text-sm line-clamp-2 mb-4 leading-relaxed">
+                ${tour.description}
+              </p>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0">
+            <a
+              href="https://wa.me/5545920005513?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20e%20valores%20para%20o%20passeio%3A%20${encodeURIComponent(tour.title)}"
+              target="_blank"
+              class="w-full bg-emerald-600/20 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/30 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 transition-all shadow"
+            >
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Consultar Valores no WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      `).join('');
+
+      lucide.createIcons();
+    }
+
+    // Render Calculator
+    let selectedTourIds = ['cataratas-brasil', 'compras-paraguai'];
+    let peopleCount = 2;
+
+    function renderCalculatorList() {
+      const list = document.getElementById('calculatorToursList');
+      list.innerHTML = TOURS_DATA.map(tour => {
+        const isChecked = selectedTourIds.includes(tour.id);
+        return `
+          <label class="flex items-center justify-between p-4 rounded-xl border transition-all cursor-pointer ${
+            isChecked 
+              ? 'bg-emerald-950/40 border-emerald-500/60 text-white' 
+              : 'bg-[#121824] border-white/5 text-neutral-300 hover:border-white/20'
+          }">
+            <div class="flex items-center gap-3">
+              <input 
+                type="checkbox" 
+                class="w-4 h-4 rounded text-emerald-600 bg-gray-800 border-gray-600 focus:ring-emerald-500 tour-checkbox" 
+                data-id="${tour.id}"
+                ${isChecked ? 'checked' : ''}
+              />
+              <div>
+                <span class="text-sm font-bold block">${tour.title}</span>
+                <span class="text-[11px] text-neutral-400">${tour.duration} • ${tour.destination}</span>
+              </div>
+            </div>
+            <span class="text-xs font-extrabold ${isChecked ? 'text-emerald-400' : 'text-neutral-400'}">
+              R$ ${tour.priceEst}
+            </span>
+          </label>
+        `;
+      }).join('');
+
+      // Add listeners
+      document.querySelectorAll('.tour-checkbox').forEach(cb => {
+        cb.addEventListener('change', (e) => {
+          const id = e.target.getAttribute('data-id');
+          if (e.target.checked) {
+            if (!selectedTourIds.includes(id)) selectedTourIds.push(id);
+          } else {
+            selectedTourIds = selectedTourIds.filter(x => x !== id);
+          }
+          renderCalculatorList();
+          updateCalculatorTotal();
+        });
+      });
+    }
+
+    function updateCalculatorTotal() {
+      const selectedTours = TOURS_DATA.filter(t => selectedTourIds.includes(t.id));
+      const total = selectedTours.reduce((sum, t) => sum + t.priceEst, 0);
+
+      document.getElementById('calcTotalPrice').textContent = `R$ ${total}`;
+      document.getElementById('calcSelectedSummary').textContent = 
+        `${selectedTours.length} passeio(s) selecionado(s) para ${peopleCount} pessoa(s)`;
+
+      const tourTitles = selectedTours.map(t => `• ${t.title}`).join('%0A');
+      const text = `Ol%C3%A1%2C%20fiz%20uma%20simula%C3%A7%C3%A3o%20no%20site%20da%202R%20Turismo%3A%0A%0A*Passageiros%3A*%20${peopleCount}%20pessoa(s)%0A*Passeios%20Escolhidos%3A*%0A${tourTitles}%0A%0A*Valor%20Estimado%3A*%20R%24%20${total}%0A%0AGostaria%20de%20confirmar%20a%20disponibilidade%20para%20as%20minhas%20datas!`;
+      
+      document.getElementById('btnCalcWhatsApp').href = `https://wa.me/5545920005513?text=${text}`;
+    }
+
+    // Setup interactions
+    document.addEventListener('DOMContentLoaded', () => {
+      // Init Icons
+      lucide.createIcons();
+
+      // Render Tours
+      renderTours();
+
+      // Filter Buttons
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.filter-btn').forEach(b => {
+            b.classList.remove('active', 'bg-emerald-600', 'text-white');
+            b.classList.add('bg-white/5', 'text-neutral-300');
+          });
+          btn.classList.add('active', 'bg-emerald-600', 'text-white');
+          btn.classList.remove('bg-white/5', 'text-neutral-300');
+          renderTours(btn.getAttribute('data-category'));
+        });
+      });
+
+      // Calculator Init
+      renderCalculatorList();
+      updateCalculatorTotal();
+
+      document.getElementById('btnMinusPeople').addEventListener('click', () => {
+        if (peopleCount > 1) {
+          peopleCount--;
+          document.getElementById('peopleCount').textContent = peopleCount;
+          updateCalculatorTotal();
+        }
+      });
+
+      document.getElementById('btnPlusPeople').addEventListener('click', () => {
+        if (peopleCount < 15) {
+          peopleCount++;
+          document.getElementById('peopleCount').textContent = peopleCount;
+          updateCalculatorTotal();
+        }
+      });
+
+      // Mobile Menu
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      document.querySelectorAll('.mobile-link').forEach(l => {
+        l.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+      });
+
+      // FAQ Accordion
+      document.querySelectorAll('.faq-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const content = btn.nextElementSibling;
+          const chevron = btn.querySelector('[data-lucide="chevron-down"]');
+          const isExpanded = !content.classList.contains('hidden');
+
+          // Close all
+          document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+          document.querySelectorAll('.faq-btn [data-lucide="chevron-down"]').forEach(ch => ch.classList.remove('rotate-180'));
+
+          if (!isExpanded) {
+            content.classList.remove('hidden');
+            if (chevron) chevron.classList.add('rotate-180');
+          }
+        });
+      });
+
+    });
+  </script>
+</body>
+</html>
