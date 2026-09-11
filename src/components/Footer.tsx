@@ -1,4 +1,4 @@
-import { Compass, Instagram, MessageCircle, Heart, ArrowUpRight, Code2, Download } from 'lucide-react';
+import { Compass, Instagram, MessageCircle, Heart, ArrowUpRight, Code2 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/tourismData';
 
 export default function Footer() {
@@ -97,14 +97,6 @@ export default function Footer() {
               >
                 <span>Visualizar HTML Puro</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
-              </a>
-              <a
-                href="/site-puro.html"
-                download="2r-turismo-foz.html"
-                className="w-full inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-neutral-200 font-bold text-xs py-2 px-3 rounded-xl border border-white/10 transition-all"
-              >
-                <Download className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Baixar index.html</span>
               </a>
             </div>
           </div>
