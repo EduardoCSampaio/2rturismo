@@ -1,4 +1,4 @@
-import { Compass, Instagram, MessageCircle, Heart, ArrowUpRight, Code2 } from 'lucide-react';
+import { Compass, Instagram, MessageCircle, Heart, ArrowUpRight } from 'lucide-react';
 import { COMPANY_INFO } from '../data/tourismData';
 
 export default function Footer() {
@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#070a10] border-t border-white/10 text-neutral-400 text-sm py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12 border-b border-white/10">
           
           {/* Col 1: Brand */}
           <div className="space-y-4">
@@ -75,30 +75,6 @@ export default function Footer() {
                 CADASTUR REGULARIZADO
               </li>
             </ul>
-          </div>
-
-          {/* Col 4: HTML Standalone Version */}
-          <div className="bg-[#0f1522] p-5 rounded-2xl border border-white/10 flex flex-col justify-between">
-            <div>
-              <div className="flex items-center gap-2 text-white font-black text-sm mb-2">
-                <Code2 className="w-4 h-4 text-emerald-400" />
-                <span>Versão 100% HTML</span>
-              </div>
-              <p className="text-xs text-neutral-400 leading-relaxed mb-4">
-                Arquivo HTML puro autocontido. Funciona em qualquer navegador ou hospedagem sem precisar de Node.js.
-              </p>
-            </div>
-            <div className="space-y-2">
-              <a
-                href="/site-puro.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs py-2 px-3 rounded-xl transition-all shadow"
-              >
-                <span>Visualizar HTML Puro</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </a>
-            </div>
           </div>
 
         </div>
