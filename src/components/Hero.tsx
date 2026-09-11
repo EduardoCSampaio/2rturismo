@@ -89,11 +89,11 @@ export default function Hero() {
         <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs sm:text-sm text-neutral-300">
           <div className="flex items-center gap-2 bg-black/40 border border-white/10 px-3.5 py-1.5 rounded-full backdrop-blur-sm">
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span>Cadastur Regularizado</span>
+            <span>Cadastro Regularizado</span>
           </div>
           <div className="flex items-center gap-2 bg-black/40 border border-white/10 px-3.5 py-1.5 rounded-full backdrop-blur-sm">
             <MapPin className="w-4 h-4 text-amber-400" />
-            <span>Busca no seu Hotel em Foz</span>
+            <span>Busque seu hotel em FOZ</span>
           </div>
           <div className="flex items-center gap-2 bg-black/40 border border-white/10 px-3.5 py-1.5 rounded-full backdrop-blur-sm">
             <Compass className="w-4 h-4 text-sky-400" />

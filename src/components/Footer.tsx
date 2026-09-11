@@ -72,7 +72,7 @@ export default function Footer() {
               <li className="text-neutral-400">{COMPANY_INFO.address}</li>
               <li className="text-neutral-400">Atendimento a todos os hotéis de Foz do Iguaçu</li>
               <li className="text-[11px] text-amber-400/80 pt-2 font-mono">
-                CADASTUR REGULARIZADO
+                CADASTRO REGULARIZADO
               </li>
             </ul>
           </div>

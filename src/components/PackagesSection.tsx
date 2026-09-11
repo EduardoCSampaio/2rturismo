@@ -28,19 +28,23 @@ export default function PackagesSection() {
           {PACKAGES.map((pkg) => (
             <div
               key={pkg.id}
-              className={`rounded-2xl flex flex-col transition-all duration-300 relative ${
-                pkg.popular
-                  ? 'bg-gradient-to-b from-[#1e1a29] via-[#161d2b] to-[#101520] border-2 border-amber-500/80 shadow-2xl shadow-orange-950/40 lg:-translate-y-2'
-                  : 'bg-[#121824] border border-white/10 hover:border-white/20'
-              }`}
+              className={`relative flex flex-col ${pkg.popular ? 'pt-5 lg:-translate-y-2' : ''}`}
             >
               {/* Popular Tag */}
               {pkg.popular && (
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-500 to-orange-500 text-neutral-950 text-xs font-black px-4 py-1 rounded-full uppercase tracking-wider shadow-md flex items-center gap-1">
+                <div className="absolute top-1 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap bg-gradient-to-r from-amber-500 to-orange-500 text-neutral-950 text-[10px] sm:text-xs font-black px-3 sm:px-4 py-1 rounded-full uppercase tracking-wider shadow-md flex items-center gap-1">
                   <Star className="w-3.5 h-3.5 fill-current" />
                   <span>Escolha Mais Popular</span>
                 </div>
               )}
+
+              <div
+                className={`rounded-2xl flex flex-col transition-all duration-300 relative h-full ${
+                pkg.popular
+                  ? 'bg-gradient-to-b from-[#1e1a29] via-[#161d2b] to-[#101520] border-2 border-amber-500/80 shadow-2xl shadow-orange-950/40'
+                  : 'bg-[#121824] border border-white/10 hover:border-white/20'
+                }`}
+              >
 
               {/* Package Header with Image preview */}
               <div className="relative h-48 rounded-t-2xl overflow-hidden">
@@ -100,6 +104,7 @@ export default function PackagesSection() {
                   <MessageCircle className="w-4 h-4 fill-current text-black" />
                   <span>CONSULTAR ESSE COMBO</span>
                 </button>
+              </div>
               </div>
             </div>
           ))}
