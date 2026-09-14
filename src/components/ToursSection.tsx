@@ -17,7 +17,7 @@ export default function ToursSection() {
   };
 
   return (
-    <section id="passeios" className="py-24 bg-[#090d14] relative">
+    <section id="passeios" className="py-24 bg-[#123349] relative">
       {/* Background accents */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-rose-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -41,7 +41,7 @@ export default function ToursSection() {
           {mainTours.map((tour) => (
             <div
               key={tour.id}
-              className="bg-gradient-to-b from-[#131a24] to-[#0f141d] rounded-2xl border border-white/10 hover:border-amber-500/40 transition-all duration-300 flex flex-col overflow-hidden group hover:shadow-2xl hover:shadow-orange-950/30 hover:-translate-y-1"
+              className="bg-gradient-to-b from-[#24546a]/85 to-[#1d465a]/85 rounded-2xl border border-white/10 hover:border-amber-500/40 transition-all duration-300 flex flex-col overflow-hidden group hover:shadow-2xl hover:shadow-orange-950/30 hover:-translate-y-1"
             >
               {/* Image Container */}
               <div className="relative h-64 overflow-hidden">

@@ -21,7 +21,7 @@ export default function InstagramFeedSection({ onSelectTour }: InstagramFeedSect
   };
 
   return (
-    <section id="instagram-feed" className="py-24 bg-[#0a0e14] relative border-t border-white/10 overflow-hidden">
+    <section id="instagram-feed" className="py-24 bg-[#164158] relative border-t border-white/10 overflow-hidden">
       {/* Ambient background glows inspired by Instagram warm palette */}
       <div className="absolute top-10 left-1/4 w-96 h-96 bg-[#f09433]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 right-1/4 w-96 h-96 bg-[#dc2743]/5 rounded-full blur-3xl pointer-events-none" />
@@ -29,7 +29,7 @@ export default function InstagramFeedSection({ onSelectTour }: InstagramFeedSect
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Instagram Profile Header Card */}
-        <div className="bg-gradient-to-r from-[#121822] via-[#161f2c] to-[#121822] rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl mb-14">
+        <div className="bg-gradient-to-r from-[#24546a]/80 via-[#2b6073]/75 to-[#24546a]/80 rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl mb-14">
           <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
             
             {/* Profile Info Left */}

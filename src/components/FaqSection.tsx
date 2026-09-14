@@ -10,7 +10,7 @@ export default function FaqSection() {
   };
 
   return (
-    <section id="dicas" className="py-24 bg-[#0b0f17] border-t border-white/10 relative">
+    <section id="dicas" className="py-24 bg-[#164158] border-t border-white/10 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-14">
@@ -31,7 +31,7 @@ export default function FaqSection() {
             return (
               <div
                 key={index}
-                className="bg-[#121825] rounded-2xl border border-white/10 overflow-hidden transition-colors"
+                className="bg-[#24546a]/80 rounded-2xl border border-white/10 overflow-hidden transition-colors"
               >
                 <button
                   onClick={() => toggleAccordion(index)}

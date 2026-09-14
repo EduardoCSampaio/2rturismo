@@ -9,7 +9,7 @@ export default function PackagesSection() {
   };
 
   return (
-    <section id="pacotes" className="py-24 bg-[#0b0f17] relative">
+    <section id="pacotes" className="py-24 bg-[#164158] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -42,7 +42,7 @@ export default function PackagesSection() {
                 className={`rounded-2xl flex flex-col transition-all duration-300 relative h-full ${
                 pkg.popular
                   ? 'bg-gradient-to-b from-[#1e1a29] via-[#161d2b] to-[#101520] border-2 border-amber-500/80 shadow-2xl shadow-orange-950/40'
-                  : 'bg-[#121824] border border-white/10 hover:border-white/20'
+                  : 'bg-[#24546a]/80 border border-white/10 hover:border-white/20'
                 }`}
               >
 

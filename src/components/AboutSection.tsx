@@ -3,7 +3,7 @@ import { Instagram, ShieldCheck, HeartHandshake, Compass, Award, ArrowUpRight, C
 
 export default function AboutSection() {
   return (
-    <section id="sobre" className="py-24 bg-[#0d121b] border-t border-white/10 relative overflow-hidden">
+    <section id="sobre" className="py-24 bg-[#164158] border-t border-white/10 relative overflow-hidden">
       {/* Warm background glow */}
       <div className="absolute top-1/2 left-0 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -18,7 +18,7 @@ export default function AboutSection() {
                 alt="2R Turismo - Experiência Inesquecível em Foz do Iguaçu"
                 className="w-full h-[440px] object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#090d14]/90 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#123349]/75 via-black/15 to-transparent" />
               
               {/* Floating Instagram Badge */}
               <div className="absolute bottom-6 left-6 right-6 bg-[#0f1522]/95 backdrop-blur-md p-4 rounded-xl border border-white/10 flex items-center justify-between gap-4 shadow-xl">
@@ -45,15 +45,15 @@ export default function AboutSection() {
 
             {/* Quick Stats Grid */}
             <div className="grid grid-cols-3 gap-3">
-              <div className="bg-[#141b27] p-4 rounded-xl border border-white/5 text-center">
+              <div className="bg-[#24546a]/80 p-4 rounded-xl border border-white/5 text-center">
                 <span className="block text-2xl sm:text-3xl font-black text-amber-400">3</span>
                 <span className="text-xs text-neutral-400 font-semibold">Países Atendidos</span>
               </div>
-              <div className="bg-[#141b27] p-4 rounded-xl border border-white/5 text-center">
+              <div className="bg-[#24546a]/80 p-4 rounded-xl border border-white/5 text-center">
                 <span className="block text-2xl sm:text-3xl font-black text-amber-400">+100</span>
                 <span className="text-xs text-neutral-400 font-semibold">Turistas Felizes</span>
               </div>
-              <div className="bg-[#141b27] p-4 rounded-xl border border-white/5 text-center">
+              <div className="bg-[#24546a]/80 p-4 rounded-xl border border-white/5 text-center">
                 <span className="block text-2xl sm:text-3xl font-black text-emerald-400">100%</span>
                 <span className="text-xs text-neutral-400 font-semibold">Pontualidade</span>
               </div>

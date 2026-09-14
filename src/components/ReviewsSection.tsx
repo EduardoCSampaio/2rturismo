@@ -3,7 +3,7 @@ import { Star, CheckCircle, Quote } from 'lucide-react';
 
 export default function ReviewsSection() {
   return (
-    <section className="py-20 bg-[#090d15] border-t border-white/10 relative">
+    <section className="py-20 bg-[#123349] border-t border-white/10 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -17,7 +17,7 @@ export default function ReviewsSection() {
             </h2>
           </div>
 
-          <div className="flex items-center gap-3 bg-[#131a26] border border-white/10 px-5 py-3 rounded-2xl shrink-0">
+          <div className="flex items-center gap-3 bg-[#24546a]/80 border border-white/10 px-5 py-3 rounded-2xl shrink-0">
             <div className="flex text-amber-400">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-5 h-5 fill-current" />

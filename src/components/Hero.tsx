@@ -18,8 +18,8 @@ export default function Hero() {
       />
       
       {/* Deep cinematic overlays with sunset warmth and high contrast */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#090d14] via-[#090d14]/85 to-[#090d14]/65 z-1" />
-      <div className="absolute inset-0 bg-radial-[circle_at_center] from-transparent via-[#090d14]/70 to-[#090d14] z-1" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#123349]/90 via-[#123349]/70 to-[#123349]/45 z-1" />
+      <div className="absolute inset-0 bg-radial-[circle_at_center] from-transparent via-[#123349]/45 to-[#123349]/80 z-1" />
 
       {/* Warm Sunset & Amber ambient glows inspired by Instagram palette */}
       <div className="absolute top-1/4 left-1/3 -translate-x-1/2 w-96 h-96 bg-[#f59e0b]/10 rounded-full blur-3xl pointer-events-none z-1" />

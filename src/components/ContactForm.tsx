@@ -33,7 +33,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contato" className="py-24 bg-[#0d121c] border-t border-white/10 relative">
+    <section id="contato" className="py-24 bg-[#164158] border-t border-white/10 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
@@ -90,7 +90,7 @@ export default function ContactForm() {
           <div className="lg:col-span-7">
             <form
               onSubmit={handleSubmit}
-              className="bg-[#121927] p-6 sm:p-10 rounded-2xl border border-white/10 shadow-2xl space-y-4"
+              className="bg-[#24546a]/80 p-6 sm:p-10 rounded-2xl border border-white/10 shadow-2xl space-y-4"
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>

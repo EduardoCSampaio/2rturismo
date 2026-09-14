@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#090d14]/90 backdrop-blur-md border-b border-white/10">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#123349]/75 backdrop-blur-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Brand Logo - Just 2R TURISMO */}
@@ -62,7 +62,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#090d14] border-b border-white/10 px-4 pt-3 pb-6 space-y-3">
+        <div className="lg:hidden bg-[#123349]/95 border-b border-white/10 px-4 pt-3 pb-6 space-y-3">
           <div className="flex flex-col space-y-2 text-base font-semibold text-neutral-200">
             <a
               href="#passeios"

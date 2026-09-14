@@ -20,7 +20,7 @@ import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#080c12] text-neutral-100 selection:bg-amber-500 selection:text-neutral-950">
+    <div className="min-h-screen bg-[#123349] text-neutral-100 selection:bg-amber-500 selection:text-neutral-950">
       <Navbar />
       <main>
         <Hero />

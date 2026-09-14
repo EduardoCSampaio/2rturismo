@@ -2,7 +2,7 @@ import { ShieldCheck, Car, Clock, Sparkles } from 'lucide-react';
 
 export default function Trustbar() {
   return (
-    <div className="bg-[#121916] border-y border-white/10 relative z-20">
+    <div className="bg-[#24546a]/80 border-y border-white/10 relative z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
           

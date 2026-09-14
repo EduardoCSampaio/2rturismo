@@ -3,7 +3,7 @@ import { COMPANY_INFO } from '../data/tourismData';
 
 export default function LocationSection() {
   return (
-    <section id="localizacao" className="py-24 bg-[#0c100f] relative">
+    <section id="localizacao" className="py-24 bg-[#164158] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-14">
@@ -21,7 +21,7 @@ export default function LocationSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           
           {/* Card 1: Details & Pickup Coverage */}
-          <div className="bg-[#151c19] p-8 sm:p-10 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div className="bg-[#24546a]/80 p-8 sm:p-10 rounded-2xl border border-white/10 flex flex-col justify-between">
             <div>
               <div className="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-400 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider mb-6 border border-emerald-500/20">
                 <Compass className="w-3.5 h-3.5" />
@@ -76,7 +76,7 @@ export default function LocationSection() {
               alt="Marco das Três Fronteiras - Foz do Iguaçu"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0c100f] via-black/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#164158]/75 via-black/20 to-transparent" />
             
             <div className="absolute bottom-6 left-6 right-6">
               <span className="text-xs font-black uppercase tracking-widest text-amber-400 block mb-1">

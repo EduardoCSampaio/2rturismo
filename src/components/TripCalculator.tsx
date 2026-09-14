@@ -45,7 +45,7 @@ ${selectedTourNames || '• Roteiro livre a definir'}
   };
 
   return (
-    <section id="calculadora" className="py-24 bg-[#0a0f18] border-y border-white/10 relative overflow-hidden">
+    <section id="calculadora" className="py-24 bg-[#164158] border-y border-white/10 relative overflow-hidden">
       {/* Ambient background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-600/10 rounded-full blur-3xl pointer-events-none" />
 
@@ -66,7 +66,7 @@ ${selectedTourNames || '• Roteiro livre a definir'}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* Controls Left Column (8 cols) */}
-          <div className="lg:col-span-8 space-y-8 bg-[#121926] p-6 sm:p-8 rounded-2xl border border-white/10 shadow-xl">
+          <div className="lg:col-span-8 space-y-8 bg-[#24546a]/80 p-6 sm:p-8 rounded-2xl border border-white/10 shadow-xl">
             
             {/* Step 1: Trip Duration */}
             <div>
@@ -230,7 +230,7 @@ ${selectedTourNames || '• Roteiro livre a definir'}
           </div>
 
           {/* Live Summary Sidebar Right Column (4 cols) */}
-          <div className="lg:col-span-4 bg-[#121926] rounded-2xl border border-amber-500/30 p-6 sm:p-7 shadow-2xl sticky top-28">
+          <div className="lg:col-span-4 bg-[#24546a]/80 rounded-2xl border border-amber-500/30 p-6 sm:p-7 shadow-2xl sticky top-28">
             <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-5">
               <h3 className="text-lg font-black text-white uppercase tracking-tight">
                 Resumo do Roteiro
